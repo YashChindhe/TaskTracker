@@ -1,0 +1,5 @@
+<%= form_with model: [project, task] do |f| %>
+  <%= f.text_field :title %>
+  <%= f.select :status, Task.statuses.keys %>
+  <%= f.submit %>
+<% end %>
