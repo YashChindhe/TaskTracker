@@ -73,11 +73,13 @@ This application allows a user to create projects and manage tasks within them u
 
 ### Installation
 
+```
 git clone <repository-url>
 cd task_tracker
 bundle install
 rails db:create db:migrate
 rails server
+```
 
 Open http://localhost:3000
 
