@@ -73,15 +73,25 @@ This application allows a user to create projects and manage tasks within them u
 
 ### Installation
 
-```
-git clone <repository-url>
+```bash
+# 1. Create the Rails application
+# PostgreSQL
+rails new task_tracker -d postgresql
 cd task_tracker
-bundle install
-rails db:create db:migrate
-rails server
-```
 
-Open http://localhost:3000
+# 2. Install dependencies
+bundle install
+
+# 3. Setup database
+rails db:create
+rails db:migrate
+
+# 4. Start server
+rails server
+
+# Open in browser:
+# http://localhost:3000
+```
 
 ---
 
